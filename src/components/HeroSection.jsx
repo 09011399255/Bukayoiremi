@@ -35,6 +35,7 @@ export default function HeroSection({ onScrollToHowItWorks }) {
             <span className="text-charcoal block">Save consistently.</span>
             <span className="text-brandgreen block mt-1">
               Borrow with confidence.
+              Access loans when needed.
             </span>
           </h1>
 
