@@ -27,10 +27,12 @@ A modern, high-fidelity website for **Bukayo-Iremi Multipurpose Ventures**, a co
 ## Getting Started
 
 ### Prerequisites
+
 - Node.js (v18 or higher)
 - npm or yarn
 
 ### Installation
+
 ```bash
 # Clone the repository
 git clone https://github.com/09011399255/Bukayoiremi.git
@@ -46,9 +48,11 @@ npm run dev
 ```
 
 ### Build for Production
+
 ```bash
 npm run build
 ```
 
 ## License
+
 All rights reserved © Bukayo-Iremi Multipurpose Ventures.
