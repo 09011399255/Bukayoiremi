@@ -101,7 +101,7 @@ export default function HeroSection({ onScrollToHowItWorks }) {
           <div className="lg:col-span-5 xl:col-span-5 bg-mint rounded-3xl p-6 sm:p-8 flex flex-col justify-center border border-mint-border">
             <div className="bg-white rounded-2xl p-6 sm:p-7 border border-surface-border shadow-card space-y-5 min-h-[360px] flex flex-col justify-between">
               {/* Card View Switcher Pill */}
-              <div className="flex items-center justify-between border-b border-surface-border pb-3">
+              <div className="flex items-center border-b border-surface-border pb-3">
                 <div className="bg-surface-light p-1 rounded-full inline-flex border border-surface-border">
                   <button
                     onClick={() => setCardView("savings")}
@@ -124,10 +124,6 @@ export default function HeroSection({ onScrollToHowItWorks }) {
                     Business Loans
                   </button>
                 </div>
-
-                <span className="text-[10px] font-bold uppercase tracking-wider text-charcoal-subtle">
-                  Illustrative
-                </span>
               </div>
 
               {/* View 1: Savings View */}
