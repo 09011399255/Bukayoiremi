@@ -114,7 +114,7 @@ export const USE_CASES = [
     title: "Rent & Household Plans",
     desc: "Stay on track with essential expenses.",
     image: "/images/usecase-rent.png",
-    alt: "African woman in a home setting",
+    alt: "Apartment keys on a wooden table in a sunlit modern living room",
   },
   {
     title: "Long-Term Goals",
