@@ -2,7 +2,6 @@ export const COMPANY = {
   name: "Bukayo-Iremi",
   fullName: "Bukayo-Iremi Multipurpose Ventures",
   location: "Ibadan, Oyo State, Nigeria",
-  tagline: "Save consistently. Grow with confidence.",
   tagline: "Save consistently. Access loans when needed.",
   mission:
     "A community savings and short-term credit business in Ibadan, helping traders and everyday earners build a consistent savings habit and access responsible business support.",

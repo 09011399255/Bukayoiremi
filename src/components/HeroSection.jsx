@@ -34,7 +34,6 @@ export default function HeroSection({ onScrollToHowItWorks }) {
           <h1 className="animate-hero-headline text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.12]">
             <span className="text-charcoal block">Save consistently.</span>
             <span className="text-brandgreen block mt-1">
-              Borrow with confidence.
               Access loans when needed.
             </span>
           </h1>
