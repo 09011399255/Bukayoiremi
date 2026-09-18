@@ -93,7 +93,7 @@ export const HOW_IT_WORKS = [
     title: "Reach Your Goal",
     desc: "Watch your savings grow and achieve what matters.",
     image: "/images/how-03.png",
-    alt: "Earner celebrating reaching their savings goal",
+    alt: "Nigerian trader smiling joyfully in front of her well-stocked store in Agbeni Market, Ibadan",
   },
 ];
 
@@ -102,7 +102,7 @@ export const USE_CASES = [
     title: "Business Restocking",
     desc: "Keep your business supplied and ready for more customers.",
     image: "/images/usecase-restocking.png",
-    alt: "Market vendor with fresh produce",
+    alt: "Hands of a Nigerian shopkeeper restocking retail shelves with goods and colorful textiles",
   },
   {
     title: "School Fees",
