@@ -86,115 +86,57 @@ export default function ServicesAndFounders({ onNavigateToAbout }) {
           ref={foundersRef}
           className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch pt-2"
         >
-          {/* Left Text Column (~45%) - Reveals after 100ms */}
+          {/* Left Text Column (~45%) - Sticky on desktop */}
           <div
-            className="lg:col-span-5 flex flex-col justify-center space-y-4 transition-all duration-600 ease-editorial"
+            className="lg:col-span-5 flex flex-col justify-between space-y-6 lg:sticky lg:top-24 lg:self-start transition-all duration-600 ease-editorial"
             style={{
               transitionDelay: foundersVisible ? "100ms" : "0ms",
               opacity: foundersVisible ? 1 : 0,
               transform: foundersVisible ? "translateY(0)" : "translateY(16px)",
             }}
           >
-            <span className="text-[11px] font-bold uppercase tracking-widest text-charcoal-muted">
-              OUR FOUNDERS
-            </span>
+            <div className="space-y-4">
+              <span className="text-[11px] font-bold uppercase tracking-widest text-charcoal-muted">
+                OUR FOUNDERS
+              </span>
 
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-charcoal tracking-tight leading-tight">
-              Built by accountants.
-              <br />
-              Shaped by life experience.
-            </h2>
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-charcoal tracking-tight leading-tight">
+                Built by accountants.
+                <br />
+                Shaped by life experience.
+              </h2>
 
-            <p className="text-sm text-charcoal-muted leading-relaxed max-w-md">
-              As a husband and wife, we combine professional expertise with real
-              understanding of the everyday challenges traders and earners face
-              in Ibadan. Bukayo-Iremi Multipurpose Ventures aims to create
-              practical financial solutions for our community.
-            </p>
+              <p className="text-sm text-charcoal-muted leading-relaxed max-w-md">
+                As a husband and wife, we combine professional expertise with real
+                understanding of the everyday challenges traders and earners face
+                in Ibadan. Bukayo-Iremi Multipurpose Ventures aims to create
+                practical financial solutions for our community.
+              </p>
 
-            <div className="pt-2">
-              <button
-                onClick={onNavigateToAbout}
-                className="btn-editorial px-6 py-3 rounded-full bg-forest text-white text-xs font-bold hover:bg-forest-light transition-colors inline-flex items-center gap-2 shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2"
-              >
-                <span>Meet the Founders</span>
-                <ArrowRight className="w-3.5 h-3.5 text-lime btn-arrow" />
-              </button>
-            </div>
-          </div>
-
-          {/* Center & Right Column: Two Portraits + Mint Brand-Message Panel (~55%) - Portrait appears first (0ms delay) */}
-          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-12 gap-5 items-stretch">
-            {/* Two Side-by-Side Founder Portraits (approx 8 cols) */}
-            <div
-              className="sm:col-span-8 grid grid-cols-2 gap-4 transition-all duration-600 ease-editorial"
-              style={{
-                opacity: foundersVisible ? 1 : 0,
-                transform: foundersVisible
-                  ? "translateY(0)"
-                  : "translateY(16px)",
-              }}
-            >
-              {/* Founder 1: Adeyeye Oluwabukola (Static, non-clickable) */}
-              <div className="flex flex-col space-y-2.5">
-                <div className="rounded-2xl overflow-hidden aspect-[4/5] bg-surface-light border border-surface-border shadow-xs">
-                  <img
-                    src={director.image}
-                    alt="Adeyeye Oluwabukola, Founder and Director"
-                    className="w-full h-full object-cover object-top"
-                  />
-                </div>
-                <div>
-                  <h4 className="text-xs sm:text-sm font-bold text-charcoal leading-tight">
-                    {director.name}
-                  </h4>
-                  <p className="text-[11px] text-charcoal-muted mt-0.5">
-                    {director.role}
-                  </p>
-                </div>
-              </div>
-
-              {/* Founder 2: Ajayi Kolawole Luke (Static, non-clickable) */}
-              <div className="flex flex-col space-y-2.5">
-                <div className="rounded-2xl overflow-hidden aspect-[4/5] bg-surface-light border border-surface-border shadow-xs">
-                  <img
-                    src={accountant.image}
-                    alt="Ajayi Kolawole Luke, Co-founder and Chief Accountant"
-                    className="w-full h-full object-cover object-top"
-                  />
-                </div>
-                <div>
-                  <h4 className="text-xs sm:text-sm font-bold text-charcoal leading-tight">
-                    {accountant.name}
-                  </h4>
-                  <p className="text-[11px] text-charcoal-muted mt-0.5">
-                    {accountant.role}
-                  </p>
-                </div>
+              <div className="pt-2">
+                <button
+                  onClick={onNavigateToAbout}
+                  className="btn-editorial px-6 py-3 rounded-full bg-forest text-white text-xs font-bold hover:bg-forest-light transition-colors inline-flex items-center gap-2 shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2"
+                >
+                  <span>Meet the Founders</span>
+                  <ArrowRight className="w-3.5 h-3.5 text-lime btn-arrow" />
+                </button>
               </div>
             </div>
 
-            {/* Mint Brand-Message Panel (approx 4 cols) - Appears after 100ms */}
-            <div
-              className="sm:col-span-4 bg-mint rounded-2xl p-6 border border-mint-border flex flex-col justify-between transition-all duration-600 ease-editorial"
-              style={{
-                transitionDelay: foundersVisible ? "100ms" : "0ms",
-                opacity: foundersVisible ? 1 : 0,
-                transform: foundersVisible
-                  ? "translateY(0)"
-                  : "translateY(16px)",
-              }}
-            >
+            {/* Mint Brand-Message Panel */}
+            <div className="bg-mint rounded-2xl p-6 border border-mint-border space-y-3 shadow-xs">
               <span className="text-3xl font-serif text-brandgreen font-bold leading-none">
                 “
               </span>
 
-              <div className="space-y-1 py-4">
-                <p className="text-xs sm:text-sm font-bold text-charcoal leading-snug">
+              <div className="space-y-1 py-1">
+                <p className="text-sm font-bold text-charcoal leading-snug">
                   Stronger people.
                   <br />
                   Stronger businesses.
-                  <br />A brighter Ibadan.
+                  <br />
+                  A brighter Ibadan.
                 </p>
               </div>
 
@@ -203,6 +145,63 @@ export default function ServicesAndFounders({ onNavigateToAbout }) {
                   — Bukayo-Iremi
                 </span>
                 <span>Multipurpose Ventures.</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Column: Two Stacked Large Founder Cards (~55%) */}
+          <div
+            className="lg:col-span-7 flex flex-col space-y-6 transition-all duration-600 ease-editorial"
+            style={{
+              opacity: foundersVisible ? 1 : 0,
+              transform: foundersVisible ? "translateY(0)" : "translateY(16px)",
+            }}
+          >
+            {/* Founder 1: Adeyeye Oluwabukola */}
+            <div className="bg-white rounded-2xl border border-surface-border overflow-hidden shadow-card">
+              <div className="aspect-[16/10] sm:aspect-[4/3] w-full overflow-hidden bg-mint">
+                <img
+                  src={director.image}
+                  alt="Adeyeye Oluwabukola, Founder and Director"
+                  className="w-full h-full object-cover object-center"
+                />
+              </div>
+              <div className="p-4 sm:p-5 flex items-center justify-between border-t border-surface-border bg-surface-light">
+                <div>
+                  <h4 className="text-sm sm:text-base font-bold text-charcoal">
+                    {director.name}
+                  </h4>
+                  <p className="text-xs text-charcoal-muted mt-0.5">
+                    {director.role}
+                  </p>
+                </div>
+                <span className="text-[11px] font-semibold text-brandgreen bg-mint px-3 py-1 rounded-full border border-mint-border">
+                  Founder & Director
+                </span>
+              </div>
+            </div>
+
+            {/* Founder 2: Ajayi Kolawole Luke */}
+            <div className="bg-white rounded-2xl border border-surface-border overflow-hidden shadow-card">
+              <div className="aspect-[16/10] sm:aspect-[4/3] w-full overflow-hidden bg-mint">
+                <img
+                  src={accountant.image}
+                  alt="Ajayi Kolawole Luke, Co-founder and Chief Accountant"
+                  className="w-full h-full object-cover object-center"
+                />
+              </div>
+              <div className="p-4 sm:p-5 flex items-center justify-between border-t border-surface-border bg-surface-light">
+                <div>
+                  <h4 className="text-sm sm:text-base font-bold text-charcoal">
+                    {accountant.name}
+                  </h4>
+                  <p className="text-xs text-charcoal-muted mt-0.5">
+                    {accountant.role}
+                  </p>
+                </div>
+                <span className="text-[11px] font-semibold text-brandgreen bg-mint px-3 py-1 rounded-full border border-mint-border">
+                  Co-founder & Chief Accountant
+                </span>
               </div>
             </div>
           </div>

@@ -287,7 +287,11 @@ export default function AboutPage({ onBackToHome }) {
             </h3>
 
             <p className="text-sm text-charcoal-muted leading-relaxed">
-              Behind Bukayo-Iremi is a dedicated team of field collection officers and coordinators who visit Ibadan's markets and neighborhoods daily. They meet contributors at their shops, record daily savings on official scheme cards, and ensure every transaction is accountable, friendly, and trusted.
+              Behind Bukayo-Iremi is a dedicated team of field collection
+              officers and coordinators who visit Ibadan's markets and
+              neighborhoods daily. They meet contributors at their shops, record
+              daily savings on official scheme cards, and ensure every
+              transaction is accountable, friendly, and trusted.
             </p>
           </div>
 
