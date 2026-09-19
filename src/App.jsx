@@ -6,6 +6,7 @@ import HowItWorksSection from "./components/HowItWorksSection";
 import SavingsPlansSection from "./components/SavingsPlansSection";
 import SavingsUseCasesSection from "./components/SavingsUseCasesSection";
 import CreditAndClosingSection from "./components/CreditAndClosingSection";
+import ContactSection from "./components/ContactSection";
 import AboutPage from "./components/AboutPage";
 import Footer from "./components/Footer";
 import { MessageCircle } from "lucide-react";
@@ -78,6 +79,9 @@ export default function App() {
 
             {/* 9. Credit Support & 10. Closing CTA */}
             <CreditAndClosingSection />
+
+            {/* 11. Contact Us Section */}
+            <ContactSection />
           </>
         ) : (
           /* About Us Page */

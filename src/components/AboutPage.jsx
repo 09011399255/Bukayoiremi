@@ -1,5 +1,11 @@
 import React from "react";
-import { ArrowDown, ArrowRight } from "lucide-react";
+import {
+  ArrowDown,
+  ArrowRight,
+  Phone,
+  Mail,
+  MessageCircle,
+} from "lucide-react";
 import { FOUNDERS, CONTACT_LINKS } from "../data/content";
 import { useScrollReveal } from "../hooks/useScrollReveal";
 
@@ -134,6 +140,31 @@ export default function AboutPage({ onBackToHome }) {
                 she established Bukayo-Iremi Multipurpose Ventures in 2023.
               </p>
             </div>
+
+            <div className="pt-2 flex flex-wrap items-center gap-3">
+              <a
+                href={
+                  CONTACT_LINKS.founders.adeyeye.channels.find(
+                    (c) => c.type === "whatsapp",
+                  )?.url
+                }
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-forest text-white text-xs font-bold hover:bg-forest-light transition-all shadow-xs"
+              >
+                <MessageCircle className="w-3.5 h-3.5 text-lime" />
+                <span>
+                  WhatsApp: {CONTACT_LINKS.founders.adeyeye.phoneFormatted}
+                </span>
+              </a>
+              <a
+                href={`mailto:${CONTACT_LINKS.founders.adeyeye.email}`}
+                className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl border border-surface-border text-charcoal hover:bg-white text-xs font-semibold transition-all"
+              >
+                <Mail className="w-3.5 h-3.5 text-brandgreen" />
+                <span>{CONTACT_LINKS.founders.adeyeye.email}</span>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -173,6 +204,31 @@ export default function AboutPage({ onBackToHome }) {
                 officer at Larikan International School in Ibadan. He now serves
                 as Chief Accountant at Bukayo-Iremi.
               </p>
+            </div>
+
+            <div className="pt-2 flex flex-wrap items-center gap-3">
+              <a
+                href={
+                  CONTACT_LINKS.founders.ajayi.channels.find(
+                    (c) => c.type === "whatsapp",
+                  )?.url
+                }
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-forest text-white text-xs font-bold hover:bg-forest-light transition-all shadow-xs"
+              >
+                <MessageCircle className="w-3.5 h-3.5 text-lime" />
+                <span>
+                  WhatsApp: {CONTACT_LINKS.founders.ajayi.phoneFormatted}
+                </span>
+              </a>
+              <a
+                href={`mailto:${CONTACT_LINKS.founders.ajayi.email}`}
+                className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl border border-surface-border text-charcoal hover:bg-white text-xs font-semibold transition-all"
+              >
+                <Mail className="w-3.5 h-3.5 text-brandgreen" />
+                <span>{CONTACT_LINKS.founders.ajayi.email}</span>
+              </a>
             </div>
           </div>
 

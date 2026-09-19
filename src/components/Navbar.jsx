@@ -85,14 +85,12 @@ export default function Navbar({ currentPage, setCurrentPage }) {
 
           {/* Actions */}
           <div className="hidden md:flex items-center gap-3">
-            <a
-              href={CONTACT_LINKS.generalSavings}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-5 py-2.5 rounded-full border border-surface-border text-charcoal text-xs font-semibold hover:border-forest/40 hover:bg-surface-light transition-all"
+            <button
+              onClick={() => navigateTo("home", "contact")}
+              className="px-5 py-2.5 rounded-full border border-surface-border text-charcoal text-xs font-semibold hover:border-forest/40 hover:bg-surface-light transition-all cursor-pointer"
             >
               Contact Us
-            </a>
+            </button>
 
             <a
               href={CONTACT_LINKS.generalSavings}
@@ -163,14 +161,12 @@ export default function Navbar({ currentPage, setCurrentPage }) {
             About Us
           </button>
           <div className="pt-3 border-t border-surface-border flex flex-col gap-2">
-            <a
-              href={CONTACT_LINKS.generalSavings}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full text-center py-2.5 rounded-full border border-surface-border text-xs font-semibold text-charcoal"
+            <button
+              onClick={() => navigateTo("home", "contact")}
+              className="w-full text-center py-2.5 rounded-full border border-surface-border text-xs font-semibold text-charcoal cursor-pointer hover:bg-surface-light"
             >
-              Contact Us on WhatsApp
-            </a>
+              Contact Us
+            </button>
           </div>
         </div>
       )}

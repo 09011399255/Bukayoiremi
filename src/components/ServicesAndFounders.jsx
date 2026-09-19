@@ -107,10 +107,10 @@ export default function ServicesAndFounders({ onNavigateToAbout }) {
               </h2>
 
               <p className="text-sm text-charcoal-muted leading-relaxed max-w-md">
-                As a husband and wife, we combine professional expertise with real
-                understanding of the everyday challenges traders and earners face
-                in Ibadan. Bukayo-Iremi Multipurpose Ventures aims to create
-                practical financial solutions for our community.
+                As a husband and wife, we combine professional expertise with
+                real understanding of the everyday challenges traders and
+                earners face in Ibadan. Bukayo-Iremi Multipurpose Ventures aims
+                to create practical financial solutions for our community.
               </p>
 
               <div className="pt-2">
@@ -135,8 +135,7 @@ export default function ServicesAndFounders({ onNavigateToAbout }) {
                   Stronger people.
                   <br />
                   Stronger businesses.
-                  <br />
-                  A brighter Ibadan.
+                  <br />A brighter Ibadan.
                 </p>
               </div>
 

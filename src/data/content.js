@@ -12,7 +12,107 @@ export const CONTACT_LINKS = {
   generalSavings: "https://wa.me/2347033640813",
   creditSupport: "https://wa.me/2348121901903",
   phoneGeneral: "07033640813",
+  phoneGeneralFormatted: "+234 703 364 0813",
   phoneCredit: "08121901903",
+  phoneCreditFormatted: "+234 812 190 1903",
+  address: "Ibadan, Oyo State, Nigeria",
+  officeHours: "Monday – Saturday: 8:00 AM – 5:00 PM",
+  founders: {
+    adeyeye: {
+      name: "Adeyeye Bukola",
+      title: "Founder & Managing Director",
+      department: "Daily Savings & Customer Care",
+      phone: "07033640813",
+      phoneFormatted: "+234 703 364 0813",
+      email: "adeyeyebukola136@gmail.com",
+      image: "/images/founder-adeyeye.png",
+      channels: [
+        {
+          type: "whatsapp",
+          label: "WhatsApp",
+          handle: "+234 703 364 0813",
+          url: "https://wa.me/2347033640813",
+        },
+        {
+          type: "email",
+          label: "Email",
+          handle: "adeyeyebukola136@gmail.com",
+          url: "mailto:adeyeyebukola136@gmail.com",
+        },
+        {
+          type: "telegram",
+          label: "Telegram",
+          handle: "Adeyeye bukola",
+          url: "https://t.me/adeyeyebukola",
+        },
+        {
+          type: "instagram",
+          label: "Instagram",
+          handle: "Adeyeye bukola",
+          url: "https://instagram.com/adeyeyebukola",
+        },
+        {
+          type: "tiktok",
+          label: "TikTok",
+          handle: "Adeyeye bukola",
+          url: "https://www.tiktok.com/@adeyeyebukola",
+        },
+        {
+          type: "facebook",
+          label: "Facebook",
+          handle: "Adeyeye bukola",
+          url: "https://www.facebook.com/search/top?q=Adeyeye%20bukola",
+        },
+      ],
+    },
+    ajayi: {
+      name: "Kolawole Ajayi",
+      title: "Co-Founder & Operations Director",
+      department: "Credit Support, Business Loans & Accounting",
+      phone: "08121901903",
+      phoneFormatted: "+234 812 190 1903",
+      email: "kolawoleajayi1984@gmail.com",
+      image: "/images/founder-ajayi.png",
+      channels: [
+        {
+          type: "whatsapp",
+          label: "WhatsApp",
+          handle: "+234 812 190 1903",
+          url: "https://wa.me/2348121901903",
+        },
+        {
+          type: "email",
+          label: "Email",
+          handle: "kolawoleajayi1984@gmail.com",
+          url: "mailto:kolawoleajayi1984@gmail.com",
+        },
+        {
+          type: "telegram",
+          label: "Telegram",
+          handle: "Kolawole Ajayi",
+          url: "https://t.me/kolawoleajayi",
+        },
+        {
+          type: "instagram",
+          label: "Instagram",
+          handle: "Ajayi kolawole Luke",
+          url: "https://instagram.com/ajayikolawoleluke",
+        },
+        {
+          type: "tiktok",
+          label: "TikTok",
+          handle: "Kolawole Ajayi",
+          url: "https://www.tiktok.com/@kolawoleajayi",
+        },
+        {
+          type: "facebook",
+          label: "Facebook",
+          handle: "Kolawole Ajayi",
+          url: "https://www.facebook.com/search/top?q=Kolawole%20Ajayi",
+        },
+      ],
+    },
+  },
 };
 
 export const FOUNDERS = {
