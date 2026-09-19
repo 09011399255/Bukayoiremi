@@ -101,9 +101,6 @@ export default function AboutPage({ onBackToHome }) {
                 className="w-full h-full object-cover object-top"
               />
             </div>
-            <div className="text-[11px] text-charcoal-subtle pl-1">
-              Placeholder portrait
-            </div>
           </div>
 
           {/* Text Right - Follows after 100ms */}
@@ -194,9 +191,6 @@ export default function AboutPage({ onBackToHome }) {
                 className="w-full h-full object-cover object-top"
               />
             </div>
-            <div className="text-[11px] text-charcoal-subtle pl-1">
-              Placeholder portrait
-            </div>
           </div>
         </div>
 
@@ -272,6 +266,38 @@ export default function AboutPage({ onBackToHome }) {
               <p className="text-xs text-charcoal-muted leading-relaxed">
                 Real conversations with people you can reach.
               </p>
+            </div>
+          </div>
+        </div>
+
+        {/* 6. OUR COMMUNITY TEAM & FIELD OFFICERS */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center pt-2">
+          <div className="lg:col-span-5 space-y-4">
+            <div className="space-y-2">
+              <span className="text-[11px] font-bold uppercase tracking-widest text-charcoal block">
+                OUR COMMUNITY TEAM
+              </span>
+              <div className="h-1 w-10 bg-lime rounded-full"></div>
+            </div>
+
+            <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-charcoal leading-tight">
+              On the ground,
+              <br />
+              <span className="text-brandgreen">every single day.</span>
+            </h3>
+
+            <p className="text-sm text-charcoal-muted leading-relaxed">
+              Behind Bukayo-Iremi is a dedicated team of field collection officers and coordinators who visit Ibadan's markets and neighborhoods daily. They meet contributors at their shops, record daily savings on official scheme cards, and ensure every transaction is accountable, friendly, and trusted.
+            </p>
+          </div>
+
+          <div className="lg:col-span-7">
+            <div className="rounded-3xl overflow-hidden aspect-[4/3] bg-surface-light border border-surface-border shadow-card">
+              <img
+                src="/images/team-officers.png"
+                alt="Bukayo-Iremi field collection team and leadership holding daily savings contribution cards"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
